@@ -1,0 +1,21 @@
+{
+  "name": "logging-middleware",
+  "version": "1.0.0",
+  "description": "Reusable logging middleware for campus evaluation",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.0"
+  }
+}
